@@ -8,8 +8,8 @@ set group=ИИПб-24-2
 set name=VaganovMA
 
 set sprint=3
-set task=1
-set variant=23
+set task=2
+set variant=25
 
 set template=%prefix%.%name%.Sprint%sprint%
 set filename_template=%template%.Task%task%.V%variant%
@@ -46,7 +46,7 @@ echo ^</Project^> >> %classlib_csproj%
 
 :: Создаём шаблон для консольного приложения
 set console_class=%console_path%\Program.cs
-echo namespace Tyuiu.%name%.Sprint%sprint%.Task%task%.V%variant%; > %console_class%
+echo namespace Tyuiu.%name%.Sprint%sprint%.Task%task%.V%variant%; >> %console_class%
 echo. >> %console_class%
 echo using %classlib_path%; > %console_class%
 echo. >> %console_class%
@@ -85,9 +85,9 @@ echo } >> %console_class%
 :: Создаём шаблон для библиотеки классов
 del %classlib_path%\Class1.cs
 set classlib_class=%classlib_path%\DataService.cs
-echo namespace Tyuiu.%name%.Sprint%sprint%.Task%task%.V%variant%; >> %classlib_class%
+echo namespace %classlib_class%; >> %classlib_class%
 echo. >> %classlib_class%
-echo namespace %classlib_path%; > %classlib_class%
+echo namespace %classlib_path%; >> %classlib_class%
 echo. >> %classlib_class%
 echo using tyuiu.cources.programming.interfaces.Sprint%sprint%; > %classlib_class%
 echo. >> %classlib_class%
@@ -98,7 +98,7 @@ echo } >> %classlib_class%
 :: Создаём шаблон для тестов
 del %mstest_path%\UnitTest1.cs
 set mstest_class=%mstest_path%\DataServiceTest.cs
-echo namespace %mstest_path%; > %mstest_class%
+echo namespace %mstest_path%; >> %mstest_class%
 echo. >> %mstest_class%
 echo using %classlib_path%; > %mstest_class%
 echo. >> %mstest_class%

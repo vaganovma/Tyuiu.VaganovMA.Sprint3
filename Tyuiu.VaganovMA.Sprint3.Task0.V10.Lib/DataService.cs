@@ -15,7 +15,7 @@ public class DataService : ISprint3Task0V10
         double multSeries = 1;
         while (startValue <= stopValue)
         {
-            multSeries = multSeries + Math.Pow(300 / (startValue + Math.Pow(value, startValue)), startValue);
+            multSeries = multSeries + Math.Pow((300 / (startValue + Math.Pow(value, startValue))), startValue);
             startValue++;
         }
         return Math.Round(multSeries, 3);
