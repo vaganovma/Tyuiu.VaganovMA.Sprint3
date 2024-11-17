@@ -17,11 +17,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Tyuiu.VaganovMA.Sprint3.Task4.V26.Lib\Tyuiu.VaganovMA.Sprint3.Task4.V26.Lib.csproj" />
+    <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
   </ItemGroup>
 
   <ItemGroup>
-    <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+    <ProjectReference Include="..\Tyuiu.VaganovMA.Sprint3.Task5.V1.Lib\Tyuiu.VaganovMA.Sprint3.Task5.V1.Lib.csproj" />
   </ItemGroup>
 
 </Project>

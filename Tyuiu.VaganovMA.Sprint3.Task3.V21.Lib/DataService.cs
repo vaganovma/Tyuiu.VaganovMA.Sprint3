@@ -6,6 +6,15 @@ public class DataService : ISprint3Task3V21
 {
     public string ReplaceNumOnChar(string value, char item)
     {
-        throw new NotImplementedException();
+        string res = value;
+        //double count = 0;
+        foreach (char c in value)
+        {
+            if (c == item)
+            {
+                count++;
+            }
+        }
+        return count;
     }
 } 
