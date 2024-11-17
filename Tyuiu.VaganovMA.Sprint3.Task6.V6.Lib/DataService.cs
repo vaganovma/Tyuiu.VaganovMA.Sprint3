@@ -13,14 +13,13 @@ public class DataService : ISprint3Task6V6
         {
             for (int d = 1; d <= x; d++)
             {
-                if (x % d == 0)
-                {
-                    if (d > 10)
-                    {
-                        sum = sum + d;
-                    }
+                
+               if  (x % d == 0 && d>10)
+               {
+                  sum++;
+               }
 
-                }
+                
             }
         }
         return sum;
