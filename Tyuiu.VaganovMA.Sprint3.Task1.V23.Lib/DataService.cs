@@ -8,7 +8,7 @@ public class DataService : ISprint3Task1V23
         double multSeries = 1;
        while( startValue <= stopValue)
         {
-            multSeries = multSeries + Math.Pow((300 / (Math.Sin(value) + Math.Pow(value, startValue))), startValue); 
+            multSeries = multSeries * Math.Pow((300 / (Math.Sin(value) + Math.Pow(value, startValue))), startValue); 
                 startValue++;
         }
         return Math.Round(multSeries, 3);
