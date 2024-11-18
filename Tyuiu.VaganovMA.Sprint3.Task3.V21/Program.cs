@@ -26,30 +26,12 @@ class Program
         Console.WriteLine("************************************************************************");
 
 
-        string str = "f3g5ht g4j 34kg4"; foreach (char c in str)
-            {
-                if (c == '3')
-                {
-                    str = str.Replace(c, 'e');
-                }
-            }
-           
-            foreach (char c in str)
-            {
-                if (c == '4')
-                {
-                    str = str.Replace(c, 'e');
-                }
-            }
-            
-            foreach (char c in str)
-            {
-                if (c == '5')
-                {
-                    str = str.Replace(c, 'e');
-                }
-            }
-            Console.WriteLine(str);
+        string str = "f3g5ht g4j 34kg4";
+        char chr = 'e';
+        Console.WriteLine(str);
+        Console.WriteLine(chr);
+        
+            Console.WriteLine(ds.ReplaceNumOnChar(str, chr));
                 
     } 
 } 

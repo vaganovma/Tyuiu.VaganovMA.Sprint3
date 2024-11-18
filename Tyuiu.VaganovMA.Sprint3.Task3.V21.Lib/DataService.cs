@@ -6,15 +6,14 @@ public class DataService : ISprint3Task3V21
 {
     public string ReplaceNumOnChar(string value, char item)
     {
-        string res = value;
-        //double count = 0;
-        foreach (char c in value)
+        string res = value;       
+        foreach (char c in res)
         {
-            if (c == item)
+            if (char.IsDigit(c))
             {
-                count++;
+                res = res.Replace(c, item);
             }
         }
-        return count;
+        return res;
     }
 } 
