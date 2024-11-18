@@ -19,8 +19,8 @@ class Program
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                     *"); 
         Console.WriteLine("************************************************************************");
 
-        int startValue = -5;
-        int stopValue = 5;
+        int startValue = -5000;
+        int stopValue = 500;
 
         Console.WriteLine("старт шага:" + startValue);
         Console.WriteLine("конец шага:" + stopValue);

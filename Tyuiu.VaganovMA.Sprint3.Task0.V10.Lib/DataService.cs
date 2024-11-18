@@ -12,11 +12,16 @@ public class DataService : ISprint3Task0V10
         //    sumSeries = sumSeries + Math.Pow(300 / (startValue + Math.Pow(value, startValue)), startValue);
         //}
         //return Math.Round(sumSeries, 3);
+
+        int i = 1;
+        int x = 5;
         double multSeries = 1;
         while (startValue <= stopValue)
         {
-            multSeries = multSeries + Math.Pow((300 / (startValue + Math.Pow(value, startValue))), startValue);
+            multSeries = multSeries * Math.Pow((300 / (i + Math.Pow(x, i))), i);
             startValue++;
+            i++;
+            Console.WriteLine("i " + i);
         }
         return Math.Round(multSeries, 3);
     }

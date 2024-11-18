@@ -30,10 +30,8 @@ class Program
         Console.WriteLine("************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                           *");
         Console.WriteLine("************************************************************************");
-
-
-        Console.WriteLine("Вошло =" + ds.GetMultiplySeries(value, startValue, stopValue));
-
+                
+        Console.WriteLine("Вошло =" + ds.GetMultiplySeries(value, startValue, stopValue));        
         Console.ReadKey();
 
     }

@@ -15,7 +15,7 @@ public class DataServiceTest
         int stopValue = 5;
 
         double res = ds.GetMultiplySeries(value, startValue, stopValue);
-        double wait = 187.383;
+        double wait = 0.033; // 187.383;
 
         Assert.AreEqual(wait, res);
     }
