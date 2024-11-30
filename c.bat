@@ -78,6 +78,10 @@ echo         Console.WriteLine("************************************************
 echo         Console.WriteLine("* РЕЗУЛЬТАТ:                                                           *"); >> %console_class%
 echo         Console.WriteLine("************************************************************************"); >> %console_class%
 echo. >> %console_class%
+echo         Console.ReadKey(); >> %console_class%
+echo. >> %console_class%
+echo         Console.WriteLine(); >> %console_class%
+echo. >> %console_class%
 echo         Console.WriteLine($"Ответ = "); >> %console_class%
 echo     } >> %console_class%
 echo } >> %console_class%
